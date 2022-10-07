@@ -18,6 +18,7 @@ void SceneTitle::init()
 
 	m_menu.setupCursor();
 
+	//ƒeƒXƒg
 }
 
 void SceneTitle::end()
