@@ -1,5 +1,6 @@
 #include "SceneMain.h"
 #include "DxLib.h"
+#include "Pad.h"
 
 void SceneMain::init()
 {
@@ -24,8 +25,7 @@ void SceneMain::update()
 		m_textVecX = -4;
 	}
 
-	int padState = GetJoypadInputState(DX_INPUT_KEY_PAD1);
-	if (padState & PAD_INPUT_2)
+	if (Pad::isTriggr(PAD_INPUT_2))
 	{
 		m_isEnd = true;
 	}
